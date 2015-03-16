@@ -1,0 +1,179 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', '-g', 'git-it' ]
+2 info using npm@2.6.1
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 silly cache add args [ 'git-it', null ]
+6 verbose cache add spec git-it
+7 silly cache add parsed spec { raw: 'git-it',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'git-it',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed git-it@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'git-it', range: '*', hasData: false }
+12 silly mapToRegistry name git-it
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/git-it
+16 verbose addNameRange registry:https://registry.npmjs.org/git-it not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/git-it
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 15:18:10
+20 verbose request id 7adadf5d634944a9
+21 http request GET https://registry.npmjs.org/git-it
+22 http 200 https://registry.npmjs.org/git-it
+23 silly get cb [ 200,
+23 silly get   { date: 'Fri, 13 Mar 2015 15:18:09 GMT',
+23 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly get     etag: '"5BALPIKGLRUY99JQ9QZSYNOZ8"',
+23 silly get     'content-type': 'application/json',
+23 silly get     'cache-control': 'max-age=60',
+23 silly get     'content-length': '31274',
+23 silly get     'accept-ranges': 'bytes',
+23 silly get     via: '1.1 varnish',
+23 silly get     age: '0',
+23 silly get     'x-served-by': 'cache-lhr6334-LHR',
+23 silly get     'x-cache': 'MISS',
+23 silly get     'x-cache-hits': '0',
+23 silly get     'x-timer': 'S1426259889.768164,VS0,VE154',
+23 silly get     vary: 'Accept',
+23 silly get     'keep-alive': 'timeout=10, max=50',
+23 silly get     connection: 'Keep-Alive' } ]
+24 verbose get saving git-it to /home/vagrant/.npm/registry.npmjs.org/git-it/.cache.json
+25 silly addNameRange number 2 { name: 'git-it', range: '*', hasData: true }
+26 silly addNameRange versions [ 'git-it',
+26 silly addNameRange   [ '0.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.0.4',
+26 silly addNameRange     '1.0.5',
+26 silly addNameRange     '1.0.6',
+26 silly addNameRange     '1.1.7',
+26 silly addNameRange     '1.1.8',
+26 silly addNameRange     '1.1.9',
+26 silly addNameRange     '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '1.2.2',
+26 silly addNameRange     '1.2.3',
+26 silly addNameRange     '1.2.4',
+26 silly addNameRange     '1.3.4',
+26 silly addNameRange     '1.3.5',
+26 silly addNameRange     '1.3.6',
+26 silly addNameRange     '1.3.7',
+26 silly addNameRange     '1.3.8',
+26 silly addNameRange     '1.3.9',
+26 silly addNameRange     '1.4.0',
+26 silly addNameRange     '1.5.0',
+26 silly addNameRange     '1.6.0',
+26 silly addNameRange     '1.6.2',
+26 silly addNameRange     '1.6.3' ] ]
+27 verbose addNamed git-it@1.6.3
+28 silly addNamed semver.valid 1.6.3
+29 silly addNamed semver.validRange 1.6.3
+30 silly mapToRegistry name git-it
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/git-it
+34 verbose addRemoteTarball https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz',
+35 verbose addRemoteTarball   'f9ac7f38a8f6603526c34daa107456d0f76b1039' ]
+36 info retry fetch attempt 1 at 15:18:11
+37 info attempt registry request try #1 at 15:18:11
+38 http fetch GET https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz
+39 http fetch 200 https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz
+40 silly fetchAndShaCheck shasum f9ac7f38a8f6603526c34daa107456d0f76b1039
+41 verbose addTmpTarball /tmp/npm-27197-e8ef7322/registry.npmjs.org/git-it/-/git-it-1.6.3.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for git-it@1.6.3
+43 silly cache afterAdd git-it@1.6.3
+44 verbose afterAdd /home/vagrant/.npm/git-it/1.6.3/package/package.json not in flight; writing
+45 verbose afterAdd /home/vagrant/.npm/git-it/1.6.3/package/package.json written
+46 silly install resolved [ { name: 'git-it',
+46 silly install resolved     version: '1.6.3',
+46 silly install resolved     description: 'Terminal app for learning Git and GitHub',
+46 silly install resolved     main: 'index.js',
+46 silly install resolved     bin: { 'git-it': './git-it.js' },
+46 silly install resolved     scripts:
+46 silly install resolved      { build: 'node guide/buildpages.js && node guide/buildpages.js zhtw',
+46 silly install resolved        'build-english': 'node guide/buildpages.js',
+46 silly install resolved        'build-zhtw': 'node guide/buildpages.js zhtw',
+46 silly install resolved        'copy-guide': 'cp -r ./guide ./.guide',
+46 silly install resolved        'git-co': 'git checkout gh-pages && git reset --hard origin/gh-pages',
+46 silly install resolved        'paste-guide': 'cp -r ./.guide/* .. && rm -rf ./.guide',
+46 silly install resolved        'git-stage': 'npm run copy-guide && npm run git-co && npm run paste-guide',
+46 silly install resolved        'git-commit': 'git add -A . && git commit -a -m \'gh-pages update\'',
+46 silly install resolved        'git-push': 'git push origin gh-pages --force && git checkout master',
+46 silly install resolved        deploy: 'npm run git-stage && npm run git-commit && npm run git-push' },
+46 silly install resolved     repository: { type: 'git', url: 'https://github.com/jlord/git-it.git' },
+46 silly install resolved     author: { name: 'Jessica Lord' },
+46 silly install resolved     license: 'BSD-2-Clause',
+46 silly install resolved     bugs: { url: 'https://github.com/jlord/git-it/issues' },
+46 silly install resolved     dependencies:
+46 silly install resolved      { 'concat-stream': '~1.2.1',
+46 silly install resolved        ecstatic: '^0.5.4',
+46 silly install resolved        'github-oauth': '0.0.4',
+46 silly install resolved        glob: '^3.2.11',
+46 silly install resolved        handlebars: '^2.0.0-alpha.4',
+46 silly install resolved        marked: '^0.3.2',
+46 silly install resolved        request: '~2.30.0',
+46 silly install resolved        'workshopper-jlord': '^0.0.6',
+46 silly install resolved        cheerio: '~0.17.0' },
+46 silly install resolved     _id: 'git-it@1.6.3',
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'f9ac7f38a8f6603526c34daa107456d0f76b1039',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz' },
+46 silly install resolved     _from: 'git-it@*',
+46 silly install resolved     _npmVersion: '1.3.11',
+46 silly install resolved     _npmUser: { name: 'jlord', email: 'to.jlord@gmail.com' },
+46 silly install resolved     maintainers: [ [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _shasum: 'f9ac7f38a8f6603526c34daa107456d0f76b1039',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz' } ]
+47 info install git-it@1.6.3 into /usr/lib
+48 info installOne git-it@1.6.3
+49 verbose installOne of git-it to /usr/lib not in flight; installing
+50 verbose lock using /home/vagrant/.npm/_locks/git-it-9ffce7766cc59c7b.lock for /usr/lib/node_modules/git-it
+51 silly install write writing git-it 1.6.3 to /usr/lib/node_modules/git-it
+52 silly cache addNamed cb git-it@1.6.3
+53 verbose unbuild lib/node_modules/git-it
+54 verbose gentlyRm vacuuming /usr/lib/node_modules/git-it
+55 verbose tar unpack /home/vagrant/.npm/git-it/1.6.3/package.tgz
+56 verbose tar unpacking to /usr/lib/node_modules/git-it
+57 verbose gentlyRm vacuuming /usr/lib/node_modules/git-it
+58 silly gunzTarPerm modes [ '775', '664' ]
+59 error tar.unpack untar error /home/vagrant/.npm/git-it/1.6.3/package.tgz
+60 verbose unlock done using /home/vagrant/.npm/_locks/git-it-9ffce7766cc59c7b.lock for /usr/lib/node_modules/git-it
+61 verbose fstream_path /usr/lib/node_modules/git-it
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES, mkdir '/usr/lib/node_modules/git-it'
+65 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+65 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+65 verbose fstream_stack Object.oncomplete (fs.js:107:15)
+66 verbose cwd /home/vagrant/www/git-it
+67 error Linux 3.13.0-30-generic
+68 error argv "node" "/usr/bin/npm" "install" "-g" "git-it"
+69 error node v0.10.33
+70 error npm  v2.6.1
+71 error path /usr/lib/node_modules/git-it
+72 error code EACCES
+73 error errno 3
+74 error Error: EACCES, mkdir '/usr/lib/node_modules/git-it'
+74 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/git-it']
+74 error   errno: 3,
+74 error   code: 'EACCES',
+74 error   path: '/usr/lib/node_modules/git-it',
+74 error   fstream_type: 'Directory',
+74 error   fstream_path: '/usr/lib/node_modules/git-it',
+74 error   fstream_class: 'DirWriter',
+74 error   fstream_stack:
+74 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+74 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+74 error      'Object.oncomplete (fs.js:107:15)' ] }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ 3, true ]
+77 verbose unbuild lib/node_modules/git-it
+78 verbose gentlyRm vacuuming /usr/lib/node_modules/git-it

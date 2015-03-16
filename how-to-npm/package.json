@@ -1,0 +1,15 @@
+{
+  "name": "how-to-npm",
+  "version": "1.0.1",
+  "description": "tutorials",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Salman Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "once": "^1.3.0"
+  },
+  "repository": "http://portfolio.ssahmed.co.uk"
+}

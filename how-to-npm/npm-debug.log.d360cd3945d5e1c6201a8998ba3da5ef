@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/home/vagrant/.nvm/versions/node/v0.12.0/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'how-to-npm' ]
+2 info using npm@2.6.1
+3 info using node@v0.12.0
+4 silly mapToRegistry name how-to-npm
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry http://localhost:15443/
+7 silly mapToRegistry uri http://localhost:15443/how-to-npm
+8 verbose request uri http://localhost:15443/how-to-npm
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 12:06:30 PM
+11 verbose request id 6578f5de09054400
+12 http request GET http://localhost:15443/how-to-npm
+13 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+14 info attempt registry request try #2 at 12:06:40 PM
+15 http request GET http://localhost:15443/how-to-npm
+16 info retry will retry, error on last attempt: Error: connect ECONNREFUSED
+17 info attempt registry request try #3 at 12:07:41 PM
+18 http request GET http://localhost:15443/how-to-npm
+19 silly get cb [ 304, undefined ]
+20 verbose stack Error: failed to fetch from registry: http://localhost:15443/how-to-npm
+20 verbose stack     at /home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/lib/cache/caching-client.js:163:27
+20 verbose stack     at /home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/lib/cache/caching-client.js:52:8
+20 verbose stack     at f (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+20 verbose stack     at /home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:92:10
+20 verbose stack     at f (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/once/once.js:17:25)
+20 verbose stack     at CachingRegistryClient.<anonymous> (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:192:20)
+20 verbose stack     at Request._callback (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:169:20)
+20 verbose stack     at self.callback (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/request/request.js:344:22)
+20 verbose stack     at Request.emit (events.js:129:20)
+20 verbose stack     at Request.onRequestError (/home/vagrant/.nvm/versions/node/v0.12.0/lib/node_modules/npm/node_modules/request/request.js:961:8)
+21 verbose cwd /home/vagrant/www/how-to-npm
+22 error Linux 3.13.0-30-generic
+23 error argv "node" "/home/vagrant/.nvm/versions/node/v0.12.0/bin/npm" "view" "how-to-npm"
+24 error node v0.12.0
+25 error npm  v2.6.1
+26 error failed to fetch from registry: http://localhost:15443/how-to-npm
+27 error If you need help, you may report this error at:
+27 error     <http://github.com/npm/npm/issues>
+28 verbose exit [ 1, true ]

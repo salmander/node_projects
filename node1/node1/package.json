@@ -1,0 +1,21 @@
+{
+    "name": "node1",
+    "description": "",
+    "version": "0.0.1",
+    "main": "./node1.js",
+    "author": {
+        "name": "salmander",
+        "email": "salman.great@gmail.com"
+    },
+    "keywords": [],
+    "licenses": {
+        "type": "none"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/YOUR_LOGIN/node1.git"
+    },
+    "bugs": {
+        "url": "http://github.com/YOUR_LOGIN/node1/issues"
+    }
+}
