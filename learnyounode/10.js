@@ -1,5 +1,5 @@
 /*
-** TCP time server example.
+** Creating TCP date time server
 */
 
 var net = require('net');
@@ -7,10 +7,13 @@ var du = require('date-util');
 
 var port = process.argv[2];
 
-var server = net.createServer(function (socket) {
-  //console.log('Connected');
-  var date = new Date().format('yyyy-mm-dd HH:MM');
+if (port === undefined) {
+  return console.error('Please provide a port tcp connection.');
+}
 
-  socket.write(date);
-  socket.end('\n');
+var server = net.createServer(function (socket) {
+  //console.log('Socket connected.');
+  var d = new Date().format('yyyy-mm-dd HH:MM');
+
+  socket.end(d + "\n");
 }).listen(port);
