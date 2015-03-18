@@ -20,6 +20,8 @@ var server = http.createServer(function (req, resp) {
             this.push(buffer.toString().toUpperCase());
             next();
         })).pipe(resp);
+    } else {
+        resp.end('Please send a valid POST request.');
     }
 
     //resp.end('End');
