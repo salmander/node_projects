@@ -3,9 +3,10 @@ var http = require('http');
 var through = require('through2');
 
 var server = http.createServer(function (req, resp) {
-    console.log("Request Method: " + req.method + "\n");
-    if (req.method == 'POST') {
-        console.log(req.param);
+    //console.log("Request Method: " + req.method + "\n");
+    resp.writeHead(200);
+    if (req.method === 'POST') {
+        //console.log(req.param);
         req.on('data', function(data) {
             //console.log('Data received.');
             //console.log('data: ' + data);
@@ -15,7 +16,10 @@ var server = http.createServer(function (req, resp) {
             resp.end();
         });
 
-        req.pipe(through()).pipe(resp);
+        req.pipe(through(function(buffer, encoding, next) {
+            this.push(buffer.toString().toUpperCase());
+            next();
+        })).pipe(resp);
     }
 
     //resp.end('End');
